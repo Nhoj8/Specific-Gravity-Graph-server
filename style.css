@@ -1,0 +1,49 @@
+header {
+    text-align: center;
+}
+
+p {
+    white-space: pre-wrap;
+    margin: 0%;
+}
+.tableheader {
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+.tableheader,
+.tableheader b,
+.lesJeu div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.tableheader b,
+.lesJeu div div {
+    border: 1px solid black;
+    padding: 0.5ch 0.2em;
+    display: inline-block;
+}
+.middle {
+    display: flex;
+    height: 500px;
+}
+.middle > div:first-child {
+    width: 80%;
+    height: 100%;
+}
+.lesJeu div div {
+    border-top: 0;
+
+    display: block;
+    text-align: right;
+}
+
+.tableheader b:first-child,
+.lesJeu div div:first-child {
+    border-right: 0;
+}
+
+.table {
+    overflow-y: auto;
+    flex: 20%;
+}
